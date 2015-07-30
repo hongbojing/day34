@@ -33,4 +33,9 @@ pre.center{
     width: 60%;
     border: #F2773F solid;
 }
+p{
+    border: solid #0A5599;
+    margin: 0.7em auto;
+    padding: 1em;
+}
 

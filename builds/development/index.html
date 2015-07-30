@@ -6,8 +6,43 @@
   <link rel="stylesheet" href="css/myStyle.css">
   <link rel="stylesheet" href="css/anotherstyle.css">
 </head>
-<body>
+<body ng-app="myApp">
+  <div ng-controller="ClockController">
+    <p ng-bind="presentTime | date:'medium'"></p>
+    <p ng-bind="presentTime | date:'short'"></p>
+    <p ng-bind="presentTime | date:'fullDate'"></p>
+    <p ng-bind="presentTime | date:'longDate'"></p>
+    <p ng-bind="presentTime | date:'mediumDate'"></p>
+    <p ng-bind="presentTime | date:'shortDate'"></p>
+    <p ng-bind="presentTime | date:'mediumTime'"></p>
+    <p ng-bind="presentTime | date:'shortTime'"></p>
+    <p ng-bind="presentTime | date:'yyyy'"></p>
+    <p ng-bind="presentTime | date:'yy'"></p>
+    <p ng-bind="presentTime | date:'y'"></p>
+    <p ng-bind="presentTime | date:'MMMM'"></p>
+    <p ng-bind="presentTime | date:'MMM'"></p>
+    <p ng-bind="presentTime | date:'MM'"></p>
+    <p ng-bind="presentTime | date:'M'"></p>
+    <p ng-bind="presentTime | date:'dd'"></p>
+    <p ng-bind="presentTime | date:'d'"></p>
+    <p ng-bind="presentTime | date:'EEEE'"></p>
+    <p ng-bind="presentTime | date:'EEE'"></p>
+    <p ng-bind="presentTime | date:'HH'"></p>
+    <p ng-bind="presentTime | date:'H'"></p>
+    <p ng-bind="presentTime | date:'hh'"></p>
+    <p ng-bind="presentTime | date:'h'"></p>
+    <p ng-bind="presentTime | date:'mm'"></p>
+    <p ng-bind="presentTime | date:'m'"></p>
+    <p ng-bind="presentTime | date:'ss'"></p>
+    <p ng-bind="presentTime | date:'s'"></p>
+    <p ng-bind="presentTime | date:'sss'"></p>
+    <p ng-bind="presentTime | date:'a'"></p>
+    <p ng-bind="presentTime | date:'z'"></p>
 
 
+  </div>
+
+  <script src="js/lib/angular/angular.min.js"></script>
+  <script src="js/lib/angular/app.js"></script>
 </body>
 </html>
